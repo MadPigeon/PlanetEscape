@@ -1,0 +1,19 @@
+{
+  "name": "PlanetEscape",
+  "version": "0.0.0",
+  "description": "The Planet Escape game",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TeamLT/PlanetEscape.git"
+  },
+  "scripts": {
+    "build": "webpack src/entry.js build/bundle.js",
+    "start": "npm i && npm run build && http-server -p 3000 -o"
+  },
+  "devDependencies": {
+    "http-server": "0.8.5",
+    "phaser": "2.4.4",
+    "webpack": "1.12.9"
+  }
+}
